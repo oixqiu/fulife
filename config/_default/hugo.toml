@@ -1,0 +1,10 @@
+baseURL = "https://oixqiu.github.io/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "丘孔的复利人生探索"
+theme = "Stack"
+hasCJKLanguage = true
+timeZone = "Asia/Shanghai"
+
+[pagination]
+  pagerSize = 20
