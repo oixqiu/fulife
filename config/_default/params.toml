@@ -1,0 +1,17 @@
+mainSections = ["posts"]
+rssFullContent = true
+
+[sidebar]
+    emoji = "🎙️"
+    subtitle = "丘孔的复利人生探索"
+
+[widgets]
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 5 } },
+        { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page = [{ type = "toc" }]
+
+[comments]
+    enabled = false
