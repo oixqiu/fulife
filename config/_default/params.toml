@@ -14,4 +14,5 @@ rssFullContent = true
     page = [{ type = "toc" }]
 
 [comments]
-    enabled = false
+    enabled = true
+    provider = "custom"

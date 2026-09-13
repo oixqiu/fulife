@@ -1,0 +1,8 @@
+{{/* 自定义评论系统：Go comment-server + 纯 JS 动态渲染
+     覆盖主题的 comments/include.html，直接渲染评论组件 */}}
+<div id="comment-section" data-post-slug="{{ .RelPermalink }}"></div>
+<link rel="stylesheet" href="{{ "css/comments.css" | relURL }}">
+<script>
+  window.COMMENT_API = 'https://comment.bjb.pub';
+</script>
+<script src="{{ "js/comments.js" | relURL }}" defer></script>

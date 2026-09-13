@@ -1,0 +1,139 @@
+/* 评论组件样式（纯 JS 方案） */
+#comment-section {
+  margin: 24px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.comment-list {
+  margin-bottom: 20px;
+}
+
+.comment-item {
+  padding: 12px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.comment-children {
+  margin-left: 20px;
+  margin-top: 10px;
+  border-left: 2px solid #eee;
+  padding-left: 12px;
+}
+
+.comment-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.comment-header strong {
+  color: #1a2b4a;
+  font-size: 14px;
+}
+
+.comment-header time {
+  color: #999;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.comment-body {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.comment-reply-btn,
+.comment-fold-btn,
+.comment-cancel-btn {
+  background: none;
+  border: 1px solid #d0d7e2;
+  border-radius: 4px;
+  color: #4a6da7;
+  font-size: 12px;
+  padding: 2px 10px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.comment-reply-btn:hover,
+.comment-fold-btn:hover {
+  background: #f0f4fa;
+}
+
+.comment-reply-form {
+  margin-top: 8px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 8px 10px;
+  border: 1px solid #d0d7e2;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comment-form textarea {
+  resize: vertical;
+}
+
+.comment-form button[type="submit"] {
+  background: #4a6da7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.comment-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.comment-form-msg {
+  font-size: 13px;
+  color: #888;
+}
+
+.comment-form-ok {
+  color: #2e8b57;
+}
+
+.comment-form-err {
+  color: #c0392b;
+}
+
+.comment-error {
+  padding: 10px;
+  color: #c0392b;
+  background: #fdf0ef;
+  border-radius: 6px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .comment-children {
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+}
